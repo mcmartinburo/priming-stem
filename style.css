@@ -1,0 +1,109 @@
+:root {
+    --bg: #f4f7f6;
+    --primary: #2c3e50;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h1, h2 { color: var(--primary); text-align: center; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th { background: #eee; padding: 12px; border-bottom: 2px solid #ddd; }
+td { padding: 10px; border-bottom: 1px solid #eee; text-align: center; }
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #34495e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover { background: #1a252f; }
+
+/* GRÁFICA ALARGADA */
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Altura fija para efecto alargado */
+    margin: 20px 0;
+}
+
+.results-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.project-title {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.author-info, .contact-info {
+    margin: 5px 0;
+    color: #555;
+}
+
+.license {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+}
+
+.license img {
+    margin-bottom: 5px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.license img:hover {
+    opacity: 1;
+}
+
+.license a {
+    color: #2980b9;
+    text-decoration: none;
+}

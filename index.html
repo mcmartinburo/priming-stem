@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Memoria - Resultados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="main-header">
+    <h1 class="project-title">Olvido inducido por la recuperación</h1>
+    <p class="author-info"><strong>Autora:</strong> María del Carmen Martín-Buro</p>
+    <p class="contact-info"><strong>Contacto:</strong> <a href="mailto:carmen.martinburo@urjc.es">carmen.martinburo@urjc.es</a></p>
+    
+    <div class="license">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+        </a>
+        <p>Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.</p>
+    </div>
+</header>
+<hr>
+    <header>
+        <h1>Análisis de Resultados</h1>
+        <p>Introduce <strong>1</strong> (acierto) o <strong>0</strong> (error) para cada ítem.</p>
+    </header>
+
+    <section class="data-entry">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ítem</th>
+                    <th>Categoría</th>
+                    <th>Objetivo</th>
+                    <th>¿Correcto?</th> <th>Condición</th>  </tr>
+            </thead>
+            <tbody id="tabla-items"></tbody>
+        </table>
+
+        <button onclick="procesar()">Procesar y Ver Resultados</button>
+    </section>
+
+    <hr>
+
+<div id="resultado-seccion" style="margin-top: 20px; padding: 15px; background: #eef2f3; border-radius: 8px;">
+    <h3 id="condicionFinal" style="color: #2c3e50; text-align: center;">Esperando cálculos...</h3>
+</div>
+
+        <div class="results-grid">
+            <div class="table-wrapper">
+                <h2>Resumen del rendimiento</h2>
+                <table id="tabla-resultados">
+                    <thead>
+                        <tr>
+                            <th>Condición</th>
+                            <th>% Recuerdo</th>
+                            <th>Palabras recordadas</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="chart-wrapper">
+                <h2>Visualización de Datos</h2>
+                <div class="chart-container">
+                    <canvas id="grafica"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
